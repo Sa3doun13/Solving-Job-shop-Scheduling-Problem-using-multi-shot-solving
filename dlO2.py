@@ -83,7 +83,7 @@ class Application:
             prg.ground(parts)
             self.__theory.prepare(prg)
             makespan = 0
-            with prg.solve(on_model=self.__on_model, on_statistics=self.__on_statistics, async_=True, yield_=False) as handle:
+            with prg.solve(on_model=self.__on_model, on_statistics=self.__on_statistics, async_=True, yield_=True) as handle:
                 wait = handle.wait(1)
                 print("Wait" + str(wait))
                 if not wait:
