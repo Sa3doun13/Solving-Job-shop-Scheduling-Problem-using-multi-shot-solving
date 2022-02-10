@@ -3,4 +3,4 @@ It contains an encoding of solving Job-shop Scheduling Problem, python api and t
 To run the small instance: \
 python dlO2.py encoding.lp facts.lp TW.lp \
 To run the large instance: \
-python dlO2.py encoding.lp TA51.lp \
+python dlO2.py encoding.lp TA51.lp 
